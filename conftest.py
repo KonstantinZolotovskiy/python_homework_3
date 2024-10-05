@@ -6,7 +6,7 @@ from selene import browser
 def browser_config():
     browser.config.window_width = 1920
     browser.config.window_height = 1080
-    browser.open("https://www.google.com/ncr")
+    browser.config.base_url = "https://www.google.com/ncr"
 
     yield
 
